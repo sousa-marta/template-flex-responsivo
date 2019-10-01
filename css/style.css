@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+/* ~ HEADER ~ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 8px 0 #676565;
+    position: fixed;
+    z-index: 99;
+    width:100vw;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+header div a, header nav, header nav ul {
+    display:flex;
+    align-items: center;
+}
+
+header nav a {
+    padding-right: 40px;
+}
+
+header nav img {
+    width:50px;
+    display:none;
+}
+
+header div img {
+    width:60px;
+}
+
+header li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header h3 {
+    font-size: 20px;
+}
+
+/* para descer todo o main para não ficar embaixo do header que está com position fixed*/
+main {
+    padding-top: 45px;
+}
+
+
+/* PÁGINA ~ HOME ~*/
+
+.banner {
+    background-image: url(../img/index-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+.banner h1 {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    margin-top:20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.banner button {
+    margin-bottom: 10%;
+    padding: 12px 35px;
+    background-color: white;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 1em;
+    border: none;
+}
+
+.banner button:hover, .product button:hover{
+    background-color: #5f4a90;
+    color:white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.index-products {
+    display: flex;
+    height: 100%;
+    margin: 20px 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    width: 390px;
+    height: 250px;
+    margin: 10px;
+    background-color: bisque;
+    background-position:center;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.product button {
+    margin-bottom: 30px;
+    padding: 12px 35px;
+    background-color: white;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+}
+
+#product-1 {
+    background-image: url(../img/product-1.png);
+}
+#product-2 {
+    background-image: url(../img/product-2.jpg);
+}
+#product-3 {
+    background-image: url(../img/product-3.jpg);
+}
+#product-4 {
+    background-image: url(../img/product-4.jpg);
+}
+#product-5 {
+    background-image: url(../img/product-5.jpg);
+}
+#product-6 {
+    background-image: url(../img/product-6.jpg);
+}
+
+
+
+/* CONTEÚDO DA PÁGINA ~ SOBRE ~*/
+
+p {
+    font-size: 18px;
+}
+
+#sobre {
+    background-image: url('../img/about-banner.jpg');
+    background-size: cover; 
+    background-position: top;
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px;
+    margin: 0;
+    box-shadow: 0 0 8px 0 #676565;
+}
+
+.destaque {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.section-central {
+    padding: 30px 25px;
+}
+
+.section-central video {
+    width: 39%;
+}
+
+.conteudo-principal {
+    display: inline-block;
+    width: 59%;
+    text-align: justify;
+    padding-left: 50px;
+}
+
+#section-audio {
+    text-align: center;
+    background-color: #f1f3f4;
+    padding: 100px;
+}
+
+/* ~ CONTATO - FORMULÁRIO ~ */
+
+/*Container Pai do Formulário*/
+main.form-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image: url(../img/contact-bck.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+/*Formulário em Si*/
+.form-container form {
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 400px; 
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius:10px;
+    border:1px solid #5f4a90;
+}
+
+.form-last-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:20px;
+}
+
+.form-last-line input {
+    margin-left:10px;
+}
+
+/*Formulário - Configurações de Estilo*/
+.form-container h1 {
+    align-self: center;
+}
+
+.form-container input, textarea {
+    padding:10px 5px;
+    border-radius: 25px;
+    border:1px solid #5f4a90;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.form-container label {
+    margin: 10px 0 0 15px;
+}
+
+.form-container button {
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #5f4a90;
+    border:1px solid #5f4a90;
+    border-radius: 25px;
+    padding: 10px 40px;
+}
+
+textarea {
+    resize:none;
+}
+
+/*FOOTER*/
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: #5f4a90;
+    padding: 20px;
+    
+}
+
+/*MEDIAS-QUERY*/
+
+@media(max-width:540px) {
+    body {
+        font-size:13px;
+    }
+    header nav img {
+        display: flex;
+    }
+    header nav ul {
+        display:none;
+    }
+}
+
+@media(max-width:960px) {
+    
+}
